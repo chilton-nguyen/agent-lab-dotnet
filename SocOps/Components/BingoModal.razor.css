@@ -1,0 +1,42 @@
+/* ===== MODAL DIALOG STYLES ===== */
+/* Retro-themed modal with neon borders and glows */
+
+.modal {
+    background-color: var(--retro-dark);
+    border: 2px solid var(--retro-cyan);
+    color: var(--retro-light);
+}
+
+/* ===== MODAL HEADER ===== */
+/* Top section with hot pink border and cyan glow */
+.modal-header {
+    border-bottom: 2px solid var(--retro-hot-pink);
+    color: var(--retro-cyan);
+    text-shadow: var(--text-shadow-cyan-soft);
+}
+
+/* ===== MODAL BODY ===== */
+/* Content area of the modal */
+.modal-body {
+    padding: 1.5rem;
+    color: var(--retro-light);
+}
+
+/* ===== MODAL FOOTER ===== */
+/* Bottom section with purple border */
+.modal-footer {
+    border-top: 2px solid var(--retro-purple);
+    background-color: var(--retro-dark);
+}
+
+/* ===== CLOSE BUTTON ===== */
+/* Close/dismiss button with hot pink color */
+.close {
+    color: var(--retro-hot-pink);
+    cursor: pointer;
+}
+
+.close:hover {
+    color: var(--retro-cyan);
+    text-shadow: var(--text-shadow-cyan-soft);
+}
