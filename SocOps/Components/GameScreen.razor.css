@@ -1,0 +1,72 @@
+/* ===== GAME SCREEN HEADER ===== */
+/* Retro-styled game title and controls section */
+
+header {
+    background-color: var(--retro-dark);
+    color: var(--retro-cyan);
+    padding: 1.5rem;
+    border-bottom: 2px solid var(--retro-hot-pink);
+    text-shadow: var(--text-shadow-cyan-strong);
+}
+
+h1 {
+    color: var(--retro-cyan);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    text-shadow: var(--text-shadow-cyan-strong);
+}
+
+/* ===== CONTROL BUTTONS ===== */
+/* Primary action button - hot pink */
+button {
+    background-color: var(--retro-dark);
+    border: 2px solid var(--retro-hot-pink);
+    color: var(--retro-hot-pink);
+    cursor: pointer;
+    padding: 0.75rem 1.5rem;
+    font-family: 'Courier New', Courier, monospace;
+    transition: all var(--transition-medium) var(--transition-timing);
+}
+
+button:hover {
+    background-color: var(--retro-hot-pink);
+    color: var(--retro-dark);
+    box-shadow: var(--glow-pink-strong);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* Back button - purple variant */
+.back-button {
+    background-color: var(--retro-dark);
+    border: 2px solid var(--retro-purple);
+    color: var(--retro-purple);
+}
+
+.back-button:hover {
+    background-color: var(--retro-purple);
+    color: var(--retro-lime);
+    box-shadow: var(--glow-purple-strong);
+}
+
+/* ===== STATUS MESSAGES ===== */
+/* Bingo, notification, alert, and success messages - lime green neon */
+.bingo,
+.notification,
+.alert,
+.success {
+    background-color: var(--retro-lime);
+    color: var(--retro-dark);
+    padding: 1rem;
+    border-left: 4px solid var(--retro-hot-pink);
+    box-shadow: var(--glow-lime);
+    font-weight: bold;
+}
+
+/* Game info text - cyan glow */
+.game-info {
+    color: var(--retro-cyan);
+    text-shadow: var(--text-shadow-cyan-soft);
+}

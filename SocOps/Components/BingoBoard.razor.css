@@ -1,0 +1,40 @@
+/* ===== BINGO BOARD LAYOUT ===== */
+/* 5x5 grid of bingo squares with retro neon borders */
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 0.5rem;
+    background-color: var(--retro-dark);
+    padding: 1rem;
+    border: 3px solid var(--retro-cyan);
+}
+
+/* ===== GRID UTILITIES ===== */
+.grid {
+    display: grid;
+    gap: 0.25rem;
+}
+
+.grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+/* ===== BINGO SQUARE STYLING ===== */
+/* Individual squares with cyan neon borders */
+.square {
+    border: 2px solid var(--retro-cyan);
+    background-color: var(--retro-dark);
+}
+
+.border {
+    border-width: 1px;
+}
+
+.border-style {
+    border-style: solid;
+}
+
+.border-color-cyan {
+    border-color: var(--retro-cyan);
+}

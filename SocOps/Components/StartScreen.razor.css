@@ -1,0 +1,52 @@
+/* ===== START SCREEN WELCOME SECTION ===== */
+/* Retro-styled landing page with neon typography */
+
+.welcome {
+    background-color: var(--retro-dark);
+    color: var(--retro-cyan);
+    text-align: center;
+    padding: 2rem;
+    font-size: 2.25rem;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: var(--text-shadow-cyan-strong);
+    font-weight: 800;
+}
+
+/* ===== TYPOGRAPHY ===== */
+/* Large main title - hot pink neon */
+.title {
+    color: var(--retro-hot-pink);
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-shadow: var(--text-shadow-pink);
+}
+
+/* Subtitle - purple glow */
+.subtitle {
+    color: var(--retro-purple);
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+    text-shadow: var(--text-shadow-purple);
+}
+
+/* ===== START BUTTON ===== */
+/* Call-to-action button with lime green neon */
+button {
+    background-color: var(--retro-dark);
+    border: 2px solid var(--retro-lime);
+    color: var(--retro-lime);
+    padding: 1rem 2rem;
+    font-size: 1.125rem;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    transition: all var(--transition-medium) var(--transition-timing);
+    text-shadow: var(--text-shadow-lime);
+}
+
+button:hover {
+    background-color: var(--retro-lime);
+    color: var(--retro-dark);
+    box-shadow: var(--glow-lime);
+    text-shadow: none;
+}
