@@ -1,5 +1,18 @@
 ﻿@inherits LayoutComponentBase
+@inject IThemeService ThemeService
 
 <div class="h-full">
+    <ThemeToggle />
     @Body
 </div>
+
+@code {
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await ThemeService.InitializeAsync();
+            StateHasChanged();
+        }
+    }
+}
