@@ -1,0 +1,62 @@
+/* ===== BINGO SQUARE BUTTON STYLES ===== */
+/* Retro-themed interactive button with neon glow effects */
+
+/* Base button styling */
+button {
+    background-color: var(--retro-dark);
+    border: 2px solid var(--retro-cyan);
+    color: var(--retro-cyan);
+    cursor: pointer;
+    transition: all var(--transition-medium) var(--transition-timing);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Hover state - hot pink glow transition */
+button:hover {
+    background-color: var(--retro-hot-pink);
+    color: var(--retro-dark);
+    box-shadow: var(--glow-pink-strong);
+}
+
+/* Active state - purple with lime text and scale effect */
+button:active {
+    background-color: var(--retro-purple);
+    color: var(--retro-lime);
+    transform: scale(0.98);
+}
+
+/* Focus state - cyan outline with glow */
+button:focus,
+button:focus-visible {
+    outline: 2px solid var(--retro-cyan);
+    outline-offset: 2px;
+    box-shadow: var(--glow-cyan);
+}
+
+/* Disabled state - muted colors, no glow */
+button:disabled {
+    background-color: #1a1a2e;
+    border-color: #444;
+    color: #666;
+    cursor: default;
+    box-shadow: none;
+}
+
+/* ===== MARKED/SELECTED STATE ===== */
+/* When a bingo square is marked - lime neon glow */
+button[aria-pressed="true"],
+.marked,
+.selected {
+    background-color: var(--retro-lime);
+    color: var(--retro-dark);
+    box-shadow: var(--glow-lime);
+    border-color: var(--retro-lime);
+}
+
+/* Marked button hover - cyan glow transition */
+button[aria-pressed="true"]:hover,
+.marked:hover,
+.selected:hover {
+    background-color: var(--retro-cyan);
+    box-shadow: var(--glow-cyan-intense);
+}
