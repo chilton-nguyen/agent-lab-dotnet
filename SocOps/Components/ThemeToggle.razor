@@ -1,0 +1,5 @@
+@inject IThemeService ThemeService
+
+<button class="theme-toggle-btn" aria-label="Toggle theme" @onclick="ThemeService.ToggleThemeAsync">
+    @(ThemeService.CurrentTheme == "dark" ? "☀️" : "🌙")
+</button>
